@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:8000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Análise de Sentenças</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/blog/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', path='/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom styles for this templates -->
+    <link href="{{ url_for('static', path='/css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='/blog.css') }}" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pt-1">
+            <a class="text-muted" href="http://127.0.0.1:8000/">TCE-PE</a>
+          </div>
+          <div class="col-4 text-center">
+            <a class="blog-header-logo text-dark" href="http://127.0.0.1:8000/">Análise de Sentenças Judiciais</a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <a class="text-muted" href="http://127.0.0.1:8000/">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
+            </a>
+
+          </div>
+        </div>
+      </header>
+
+      <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+          <a class="p-2 text-muted" href="http://127.0.0.1:8000/">Sentenças</a>
+          <a class="p-2 text-muted" href="http://127.0.0.1:8000/">Municípios</a>
+          <a class="p-2 text-muted" href="http://127.0.0.1:8000/">Estado</a>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="col-4">
+            <a class="blog-header-logo
+            text-dark" href="http://127.0.0.1:8000/">Recentes</a>
+      </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-success">Munícipio de Santa Filomena</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="http://127.0.0.1:8000/">Análise Preliminar</a>
+              </h3>
+              <div class="mb-1 text-muted">11, Nov</div>
+              <p class="card-text mb-auto">
+                As contas da gestão do prefeito <a href="http://127.0.0.1:8000/">@PedroMelo</a> referente ao periodo de 2016
+                do município foram <strong class="text-danger">rejeitadas</strong>.
+              </p>
+              <a href="http://127.0.0.1:8000/">Mais Informações</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-primary">Estado</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="http://127.0.0.1:8000/">Análise Preliminar</a>
+              </h3>
+              <div class="mb-1 text-muted">12, Nov</div>
+              <p class="card-text mb-auto">As contas do governador <a href="http://127.0.0.1:8000/">@PauloCamara</a> referentes ao periodo de
+                2016 foram <strong class="text-success">aceitas</strong> pelo TCE.</p>
+              <a href="http://127.0.0.1:8000/">Mais informações</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-8 blog-main">
+          <h3 class="pb-3 mb-4 font-italic border-bottom">
+            Município de Santa Filomena
+          </h3>
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Análise da Sentença</h2>
+            <p class="blog-post-meta">29 de Janeiro de 2016 pelo <a href="http://127.0.0.1:8000/">TCE-PE</a></p>
+
+            <p>As contas do município de Santa Filomena foram rejeitadas pelo TCE no dia 29 de Janeiro de 2016. Os motivos que levaram a
+              rejeição estão listados abaixo.</p>
+            <hr>
+            <ul>
+              <li>
+                <p>A existência de déficit de execução orçamentária, da ordem de <strong>R$ 927.610,35</strong>;</p>
+              </li>
+              <li>
+                <p> O déficit financeiro encontrado no município de Santa Filomena, no montante de <strong>R$ 335.286,30</strong>;</p>
+              </li>
+              <li>
+                <p>O não recolhimento das contribuições previdenciárias dos servidores;</p>
+              </li>
+              <li>
+                <p> O não recolhimento das contribuições previdenciárias patronais.</p>
+              </li>
+            </ul>
+            <blockquote>
+
+            <p>
+              </p><p><strong>CONSELHEIRO(a):</strong> JOÃO CARNEIRO CAMPOS</p>
+              <p><strong>CONSELHEIRO(a):</strong> RANILSON RAMOS </p>
+              <p> <strong>CONSELHEIRO(a):</strong>, Presidente da Sessão e relatora do processo: TERESA DUERE </p>
+              <p><strong>Procurador do Ministério Público de Contas:</strong> GUSTAVO MASSA </p>
+            <p></p>
+              <strong class="text-primary">Recife, 21 de Setembro de 2016</strong>
+            </blockquote>
+            <h2>Principais Tags</h2>
+            <p><a href="http://127.0.0.1:8000/">@Servidores</a>; <a href="http://127.0.0.1:8000/">@Execução Orçamentária</a>; <a href="http://127.0.0.1:8000/">@Déficit </a></p>
+            <h3>Charts e Gráficos</h3>
+            <img src="../static/imgs/myvisual.png">
+             <h4>Consequências</h4>
+            <ul>
+              <li>Consequências para o equilíbrio fiscal e a capacidade financeira do município.</li>
+              <li>Restrição da capacidade de pagamento do município frente às suas obrigações        de curto prazo.</li>
+              <li>Aumento do passivo do município ante o seu sistema de previdência</li>
+            </ul>
+
+          </div><!-- /.blog-post -->
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Recomendações</h2>
+
+            <p>recomendações a seguir relacionadas, a partir da data de publicação desta decisão, sob pena de aplicação da multa prevista no inciso XII do artigo 73 do citado Diploma legal:</p>
+            <ul>
+              <li>Adotar mecanismos de controle de modo que não deixe de efetuar a arrecadação de Receitas
+Próprias do município.</li>
+              <li>Efetuar o registro e cobrança da Divida Ativa do município.</li>
+              <li>Zelar pela confiabilidade das informações contábeis de modo que evidenciem a real situação
+patrimonial do município;</li>
+            </ul>
+
+          </div><!-- /.blog-post -->
+
+          <nav class="blog-pagination">
+            <a class="btn btn-outline-secondary disabled" href="https://getbootstrap.com/docs/4.0/examples/blog/#">Anterior</a>
+            <a class="btn btn-outline-primary" href="https://getbootstrap.com/docs/4.0/examples/blog/#">Próximo</a>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+        <aside class="col-md-4 blog-sidebar">
+          <div class="p-3 mb-3 bg-light rounded">
+            <h4 class="font-italic">Sobre</h4>
+            <p class="mb-0">
+              Este é um sistema automatizado de verificação e extração de informação de sentenças
+            jusdiciais. Através dele, podemos disponibilizar uma versão amigável de sentenças expedidas
+            pelo Tribubal de Contas de Pernambuco.
+            </p>
+            <a href="http://127.0.0.1:8000/" class="text-dark font-weight-bold">Continue lendo...</a>
+          </div>
+
+          <div class="p-3">
+            <h4 class="font-italic">Archives</h4>
+            <ol class="list-unstyled mb-0">
+              <li><a href="http://127.0.0.1:8000/">Março de 2014</a></li>
+              <li><a href="http://127.0.0.1:8000/">Fevereiro de 2014</a></li>
+              <li><a href="http://127.0.0.1:8000/">Janeiro de 2014</a></li>
+              <li><a href="http://127.0.0.1:8000/">Dezembro de 2013</a></li>
+              <li><a href="http://127.0.0.1:8000/">Novembro de 2013</a></li>
+              <li><a href="http://127.0.0.1:8000/">Outubro de 2013</a></li>
+              <li><a href="http://127.0.0.1:8000/">Setempro de 2013</a></li>
+              <li><a href="http://127.0.0.1:8000/">Agosto de 2013</a></li>
+              <li><a href="http://127.0.0.1:8000/">Julho de 2013</a></li>
+              <li><a href="http://127.0.0.1:8000/">Junho de 2013</a></li>
+              <li><a href="http://127.0.0.1:8000/">Maio 2013</a></li>
+              <li><a href="http://127.0.0.1:8000/">Abril 2013</a></li>
+            </ol>
+          </div>
+
+          <div class="p-3">
+            <h4 class="font-italic">Mais</h4>
+            <ol class="list-unstyled">
+              <li><a href="http://127.0.0.1:8000/">TCE-PE</a></li>
+            </ol>
+          </div>
+        </aside><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </main><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>
+        <a href="https://getbootstrap.com/docs/4.0/examples/blog/#">Back to top</a>
+      </p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{ url_for('static', path='/jquery-3.2.1.slim.min.js.baixados') }}" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="{{ url_for('static', path='/popper.min.js.baixados') }}"></script>
+    <script src="{{ url_for('static', path='/bootstrap.min.js.baixados') }}"></script>
+    <script src="{{ url_for('static', path='/holder.min.js.baixados') }}"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+  
+
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="250" viewBox="0 0 200 250" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="13" style="font-weight:bold;font-size:13pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg></body></html>

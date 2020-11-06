@@ -47,59 +47,76 @@
             <div class="mb-1 text-muted">Data: 11 de Nov de 2016</div>
              <p><strong class="d-inline-block mb-2 text-success">Munícipio:</strong> Santa Filomena</p>
 
-              <p class="card-text mb-auto"></p>
+              <p class="card-text"></p>
                 <h5 class="mb-0">
-                <a class="text-dark" href="/">Resumo:
-                </a>
+                    <p>
+                        <strong>Resumo:</strong>
+                        As contas da gestão do prefeito <a href="http://127.0.0.1:8000/">@PedroMelo</a> referente ao periodo de 2016
+                        do município foram <strong class="text-danger">rejeitadas</strong>.
+                    </p>
                 </h5>
-                <p>
-                  As contas da gestão do prefeito <a href="http://127.0.0.1:8000/">@PedroMelo</a> referente ao periodo de 2016
-                  do município foram <strong class="text-danger">rejeitadas</strong>.
-                </p>
 
-            <p> <strong>Tags:</strong>
+
+            <p> <strong>Tópicos:</strong>
               <a href="http://127.0.0.1:8000/">@Servidores</a>; <a href="http://127.0.0.1:8000/">@Execução Orçamentária</a>; <a href="http://127.0.0.1:8000/">@Déficit </a></p>
           </div>
 
-         <div class="row">
-           <div class="col-lg-8 text-center overflow-hidden">
-               <div class="card">
-                   <h5 class="card-header">Análise da Sentença</h5>
-                   <div class="card-body">
-                       <h5 class="card-title">Resumo da decisão</h5>
-                       <p class="card-text">
-                       <p>As contas foram rejeitas devido a existência de déficit de execução orçamentária,
-                       da ordem de <strong>R$ 927.610,35</strong>. Além de o déficit financeiro encontrado no município
-                       de Santa Filomena, no montante de <strong>R$ 335.286,30</strong>. Houveram o não recolhimento das
-                       contribuições previdenciárias dos servidores e das contribuições previdenciárias patronais.
-                       <hr>
-                       <a href="#" class="btn btn-primary">Detalhes</a>
+           <div class="row">
+               <div class="col-lg-8 text-center overflow-hidden">
+                   <div class="row">
+                       <div class="card" style="width: 21rem;">
+                           <div class="card-body">
+                               <h5 class="card-title">Sentença</h5>
+
+                               <p class="card-text">
+                                   A existência de déficit de execução orçamentária, da ordem de <strong>R$ 927.610,35</strong>.
+                                   O déficit financeiro encontrado no município de Santa Filomena, no montante de
+                                   <strong>R$ 335.286,30</strong>.O não recolhimento das contribuições previdenciárias dos
+                                   servidores.
+                               </p>
+
+                           </div>
+                           <a href="#" class="card-link">Detalhes</a>
+                       </div>
+                       <div class="card" style="width: 21rem;">
+                           <div class="card-body">
+                               <h5 class="card-title">Consequências</h5>
+
+                               <p class="card-text">
+                                   Consequências para o equilíbrio fiscal e a capacidade financeira do município.
+                                   Restrição da capacidade de pagamento do município frente às suas obrigações de curto
+                                   prazo.
+                               </p>
+                           </div>
+                           <a href="#" class="card-link">Detalhes</a>
+                       </div>
                    </div>
+
                    <div class="card">
-                       <h5 class="card-header">Consequências e Considerações</h5>
+                       <h5 class="card-header">Considerações</h5>
                        <div class="card-body">
                            <h5 class="card-title">Resumo</h5>
                            <p class="card-text">
-                               Consequências para o equilíbrio fiscal e a capacidade financeira do município. Restrição
-                               da capacidade de pagamento do município frente às suas obrigações de curto prazo. Então é
-                               preciso adotar mecanismos de controle de modo que não deixe de efetuar a arrecadação de Receitas
+                               Então é preciso adotar mecanismos de controle de modo que não deixe de efetuar a arrecadação de Receitas
                                Próprias do município. Efetuar o registro e cobrança da Divida Ativa do município.
                            </p>
-                           <a href="#" class="btn btn-primary">Detalhes</a>
+
                        </div>
                    </div>
-               </div>
-          </div>
 
-           <div class="col-lg-4 text-center overflow-hidden">
-            <div class="my-3 py-3">
-              <h2 class="display-5">Ilustrações</h2>
-              <p class="small">Os gráficos explicam os valores relacionados a decisão.</p>
-            <hr>
-              <img src="{{ url_for('static', path='/imgs/myvisual.png') }}">
-            </div>
-          </div>
-         </div>
+               </div>
+
+               <div class="col-lg-4 text-center overflow-hidden">
+                   <div class="my-3 py-3">
+                       <h2 class="display-5">Ilustrações</h2>
+                       <p class="small">Os gráficos explicam os valores relacionados a decisão.</p>
+                       <hr>
+                       <img src="{{ url_for('static', path='/imgs/myvisual.png') }}">
+                       <a href="#" class="card-link">Mais detalhes</a>
+                       <a href="#" class="card-link">Voltar</a>
+                   </div>
+               </div>
+           </div>
 
        </main>
 

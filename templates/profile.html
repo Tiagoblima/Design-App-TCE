@@ -17,6 +17,30 @@
     <!-- Custom styles for this templates -->
     <link href="{{ url_for('static', path='/css') }}" rel="stylesheet">
     <link href="{{ url_for('static', path='/blog.css') }}" rel="stylesheet">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Estado das Contas', 'Quantidade'],
+                ['Aprovação',     4],
+                ['Rejeição',      3],
+                ['Aprovação com Resalva',      1],
+            ]);
+
+            var options = {
+                title: 'Resultados das Contas'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+    </script>
   </head>
 
   <body>
@@ -30,7 +54,7 @@
 
           <div class="col-4 text-center">
             <h2 class="text-center
-            text-dark" href="/">Análise Preliminar</h2>
+            text-dark" href="/">Perfil do Gestor</h2>
           </div>
           <div class="col-4 d-flex justify-content-end align-items-center">
             <a class="text-muted" href="http://127.0.0.1:8000/">
@@ -44,58 +68,46 @@
        <main role="main" class="container">
          <div class="container align-items-center">
 
-            <div class="mb-1 text-muted">Data: 11 de Nov de 2016</div>
-             <p><strong class="d-inline-block mb-2 text-success">Munícipio:</strong> Santa Filomena</p>
+             <div class="row align-items-center">
+                 <div class="col-lg-4">
+                     <img src="{{ url_for('static', path='/imgs/profile.png') }}">
+                 </div>
+                 <br>
+                 <br>
+                <div class="col-lg-4">
+                    <p><strong>Nome: </strong>José da Silva</p>
+                    <p><strong>Email: </strong>prefeito@server.com</p>
+                    <p><strong>Com mandato: </strong>Sim</p>
+                    <p><strong>Cargo: </strong>Prefeito</p>
+                </div>
+                 <div class="col-lg-4">
+                     <p><strong>Cidade: </strong>Santa Filomena</p>
+                     <p><strong>Periodo: </strong>2016-2018</p>
+                     <p><strong>Contas Aprovadas: </strong><strong class="alert-success">2011,2012,2013</strong></p>
+                     <p><strong>Contas Rejeitadas: </strong><strong class="alert-danger">2014</strong></p>
+                 </div>
+             </div>
 
-              <p class="card-text"></p>
-                <h5 class="mb-0">
-                    <p>
-                        <strong>Resumo:</strong>
-                        As contas da gestão do prefeito <a href="http://127.0.0.1:8000/profile">Pedro Melo</a> referente ao periodo de 2016
-                        do município foram <strong class="text-danger">rejeitadas</strong>.
-                    </p>
-                </h5>
-
-
-            <p> <strong>Tópicos:</strong>
-              <a href="http://127.0.0.1:8000/">#Servidores</a>; <a href="http://127.0.0.1:8000/">#Execução Orçamentária</a>; <a href="http://127.0.0.1:8000/">#Déficit </a></p>
           </div>
 
-           <div class="row">
+           <div class="row align-content-center">
                <div class="col-lg-8 text-center overflow-hidden">
-                   <div class="row">
-                       <div class="card" style="width: 21rem;">
-                           <div class="card-body">
-                               <h5 class="card-title">Sentença</h5>
-
-                               <p class="card-text">
-                                   A existência de déficit de execução orçamentária, da ordem de <strong>R$ 927.610,35</strong>.
-                                   O déficit financeiro encontrado no município de Santa Filomena, no montante de
-                                   <strong>R$ 335.286,30</strong>.O não recolhimento das contribuições previdenciárias dos
-                                   servidores.
-                               </p>
-
-                           </div>
-                           <a href="#" class="card-link">Detalhes</a>
-                       </div>
-                       <div class="card" style="width: 21rem;">
-                           <div class="card-body">
-                               <h5 class="card-title">Consequências</h5>
-
-                               <p class="card-text">
-                                   Consequências para o equilíbrio fiscal e a capacidade financeira do município.
-                                   Restrição da capacidade de pagamento do município frente às suas obrigações de curto
-                                   prazo.
-                               </p>
-                           </div>
-                           <a href="#" class="card-link">Detalhes</a>
-                       </div>
-                   </div>
-
                    <div class="card">
-                       <h5 class="card-header">Considerações</h5>
+                       <h5 class="card-header">Histórico</h5>
                        <div class="card-body">
-                           <h5 class="card-title">Resumo</h5>
+                           <h5 class="card-title">
+                               <div class="row align-content-center">
+                                   <div class="col-lg-8">
+                                       Análise de Conta Rejeitada-<strong class="small">Resumo</strong>
+                                   </div>
+                                   <div class="col-lg-4 text-muted">
+                                       Ano:
+                                       <span class="alert-danger">
+                                       2014
+                                   </span>
+                                   </div>
+                               </div>
+                           </h5>
                            <p class="card-text">
                                Então é preciso adotar mecanismos de controle de modo que não deixe de efetuar a arrecadação de Receitas
                                Próprias do município. Efetuar o registro e cobrança da Divida Ativa do município.
@@ -109,9 +121,9 @@
                <div class="col-lg-4 text-center overflow-hidden">
                    <div class="my-3 py-3">
                        <h2 class="display-5">Ilustrações</h2>
-                       <p class="small">Os gráficos explicam os valores relacionados a decisão.</p>
+                       <p class="small">Os gráficos explicam o desenpenho do gestor</p>
                        <hr>
-                       <img src="{{ url_for('static', path='/imgs/myvisual.png') }}">
+                       <div id="piechart" style="width: 500px; height: 250px;"></div>
                        <a href="#" class="card-link">Mais detalhes</a>
                        <a href="#" class="card-link">Voltar</a>
                    </div>
@@ -119,10 +131,9 @@
            </div>
 
        </main>
-
+    </main>
     <footer class="blog-footer">
-      <p>TCE-PE<a href="https://getbootstrap.com/"></a>.</p>
-
+      <p>TCE-PE<a href="/"></a>.</p>
     </footer>
 
     <!-- Bootstrap core JavaScript

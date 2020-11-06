@@ -9,7 +9,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
 
-@app.get("/profile.html", response_class=HTMLResponse)
+@app.get("/profile", response_class=HTMLResponse)
 async def root(request: Request):
     return templates.TemplateResponse("profile.html",
                                       {"request": request, "id": 200})
@@ -21,7 +21,7 @@ async def root(request: Request):
                                       {"request": request, "id": 200})
 
 
-@app.get("/analise_1.html", response_class=HTMLResponse)
+@app.get("/analise_1", response_class=HTMLResponse)
 async def root(request: Request):
     return templates.TemplateResponse("analise_1.html",
                                       {"request": request, "id": 200})

@@ -63,50 +63,101 @@
 
           </div>
         </div>
+
       </header>
+        <div class="container align-items-center">
 
-       <main role="main" class="container">
-         <div class="container align-items-center">
-
-             <div class="row align-items-center">
-                 <div class="col-lg-4">
-                     <img src="{{ url_for('static', path='/imgs/profile.png') }}">
-                 </div>
-                 <br>
-                 <br>
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <img src="{{ url_for('static', path='/imgs/profile.png') }}">
+                </div>
+                <br>
+                <br>
                 <div class="col-lg-4">
                     <p><strong>Nome: </strong>José da Silva</p>
                     <p><strong>Email: </strong>prefeito@server.com</p>
                     <p><strong>Com mandato: </strong>Sim</p>
                     <p><strong>Cargo: </strong>Prefeito</p>
                 </div>
-                 <div class="col-lg-4">
-                     <p><strong>Cidade: </strong>Santa Filomena</p>
-                     <p><strong>Periodo: </strong>2016-2018</p>
-                     <p><strong>Contas Aprovadas: </strong><strong class="alert-success">2011,2012,2013</strong></p>
-                     <p><strong>Contas Rejeitadas: </strong><strong class="alert-danger">2014</strong></p>
-                 </div>
-             </div>
+                <div class="col-lg-4">
+                    <p><strong>Cidade: </strong>Santa Filomena</p>
+                    <p><strong>Periodo: </strong>2017-2020</p>
 
-          </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
 
+                    <div class="col-sm-2">
+                        <!-- Example single danger button -->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-success btn-sm dropdown-toggle"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Contas Aprovadas
+                            </button>
+                            <div class="dropdown-menu">
+
+                                <a class="dropdown-item" href="#">
+                                    <strong class="alert-success">2018</strong>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <strong class="alert-success">2019</strong>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <strong class="alert-success">2020</strong>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <!-- Example single danger button -->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-warning btn-sm dropdown-toggle"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Com Resalvas
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">
+                                    <strong class="alert-warning">2016</strong>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <!-- Example single danger button -->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-danger btn-sm dropdown-toggle"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Contas Reprovadas
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">
+                                    <strong class="alert-danger">2017</strong>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Mais</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+       <main role="main" class="container">
            <div class="row align-content-center">
                <div class="col-lg-8 text-center overflow-hidden">
                    <div class="card">
-                       <h5 class="card-header">Histórico</h5>
+                       <h5 class="card-header">Resumo: Análise de Conta
+                           <strong class="small">2017</strong></h5>
                        <div class="card-body">
                            <h5 class="card-title">
-                               <div class="row align-content-center">
-                                   <div class="col-lg-8">
-                                       Análise de Conta Rejeitada-<strong class="small">Resumo</strong>
-                                   </div>
-                                   <div class="col-lg-4 text-muted">
-                                       Ano:
-                                       <span class="alert-danger">
-                                       2014
-                                   </span>
-                                   </div>
-                               </div>
+                               Resultado: <span class="alert-danger">Rejeitada</span>
                            </h5>
                            <p class="card-text">
                                Então é preciso adotar mecanismos de controle de modo que não deixe de efetuar a arrecadação de Receitas
